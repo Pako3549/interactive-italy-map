@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IN:wght@100..400&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: "Montserrat", serif;}
+html, body{width: 100vw; height: 100vh;}
+body{background-color: #2B2B40;}
+
+.center-flex{display: flex; align-items: center; justify-content: center;}
+
+.hidden {display: none !important;}
+
+
+/************************************************/
+
+
+.search {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 250px;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    background: none;
+    color: #eee;
+    font-size: 15px;
+    padding: 0 15px;
+    border: 3px solid #5A5A7A;  
+    border-radius: 20px;
+}
+
+.suggestions {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 70px; 
+    right: 0;
+    width: 100%;
+    background: #2B2B40;
+    border: 3px solid #5A5A7A;
+    border-radius: 0 0 20px 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    scrollbar-width: none;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    color: #eee;
+}
+
+.suggestions li:hover {
+    background: #68C3D4;
+}
+
+.suggestions::-webkit-scrollbar {
+    display: none;
+}
+
+.map-container{margin: 2em auto; width: 80vh;}
+
+.region-shape{fill: #96AFDB; filter: url(#dropshadow);}
+.region .region-shape{
+    fill: white;
+    cursor: pointer;
+    filter: url(#dropshadow--link);
+    transition: fill 0.3s ease-out;
+}
+
+.region:hover .region-shape, .region:focus .region-shape{filter: url(#dropshadow--hover);}
+.region.active .region-shape, .region:hover .region-shape, .region:focus .region-shape{fill: #3A3A5A;}
+
+
+/************************************************/
+
+
+.popup{display: none; position: absolute; background: white;}
+
+.popup .overlay{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: #000000;
+}
+
+.popup .content{width: 80vw; height: 80vh; background: white; border-radius: 20px; z-index: 1;}
+.popup .content .text{width: 50%; height: 100%; overflow: scroll; scrollbar-width: none;}
+.popup .content h2{padding: 60px 60px 40px 60px; font-size: 50px; font-family: "Montserrat", serif;}
+.popup .content p{padding: 0 60px 50px 60px; font-size: 20px;}
+.popup .content .img{width: 50%; height: 100%; display: block; border-radius: 0 20px 20px 0;}
+
+.popup img{width: 40px; position: fixed; top: 25px; right: 25px; cursor: pointer; z-index: 1;}
+
+
+/************************************************/
+
+@media screen and (max-width: 1000px) {
+    .search {
+        width: 90%;
+        right: 5%;
+    }
+
+    .suggestions {
+        top: 60px; 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .search {
+        width: 90vw;
+        right: 5vw;
+    }
+
+    .suggestions {
+        top: 60px; 
+    }
+}
