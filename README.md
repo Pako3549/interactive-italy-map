@@ -19,8 +19,8 @@ You can see the live demo on [GitHub Pages](https://pako3549.github.io/interacti
 
 ## Customization ✨
 - **Map Regions**: The map's SVG or clickable areas can be updated in the <code>index.html</code> file. ✏️
-- **Region Data**: Add or modify region-specific data in the JavaScript file (<code>main.js</code>). 🔧
-- **Styling**: Customize the design by editing the <code>styles.css</code> file. 🎨
+- **Region Data**: Add or modify region-specific data in the JavaScript file (<code>main.js</code>) 🔧
+- **Styling**: Customize the design by editing the <code>style.css</code> file. 🎨
 ## Contributing 🤝
 Contributions are welcome! Feel free to open an issue or submit a pull request. 🛠️
 ## License 📄
