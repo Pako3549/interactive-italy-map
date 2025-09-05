@@ -10,7 +10,7 @@ A simple web project built using pure HTML, CSS, and JavaScript that features an
 
 ## Demo 🎥
 
-You can see the live demo on [GitHub Pages](https://pako3549.github.io/interactive-italy-map/). 🌐
+You can see the live demo on [GitHub Pages](https://interactive-italy-map.pako.uk) 🌐
 
 ## Usage ⚙️
 - Hover over the map to highlight the regions. 🖱️
